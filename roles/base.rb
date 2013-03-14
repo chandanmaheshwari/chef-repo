@@ -3,6 +3,11 @@
   "description": "Base role applied 2 all nodes.",
   "json_class": "Chef::Role",
   "default_attributes": {
+    "java": {
+     "oracle": {
+       "accept_oracle_download_terms": true
+     }
+   }
   },
   "override_attributes": {
     "authorization": {
@@ -22,7 +27,8 @@
     "recipe[apt]",
     "recipe[git]",
     "recipe[build-essential]",
-    "recipe[vim]"
+    "recipe[vim]",
+	"recipe[java]"
   ],
   "env_run_lists": {
   }
