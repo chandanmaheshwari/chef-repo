@@ -28,7 +28,8 @@
     "recipe[git]",
     "recipe[build-essential]",
     "recipe[vim]",
-	"recipe[java]"
+	"recipe[java]",
+	"recipe[plms_app]"
   ],
   "env_run_lists": {
   }
