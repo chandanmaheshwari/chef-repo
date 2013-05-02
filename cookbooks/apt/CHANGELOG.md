@@ -1,3 +1,17 @@
+## v1.9.2:
+
+* [COOK-2631] - Create Ubuntu 10.04 specific template for apt-cacher-ng
+
+## v1.9.0:
+
+* [COOK-2185] - Proxy for apt-key
+* [COOK-2338] - Support pinning by glob() or regexp
+
+## v1.8.4:
+
+* [COOK-2171] - Update README to clarify required Chef version: 10.18.0
+  or higher.
+
 ## v1.8.2:
 
 * [COOK-2112] - need [] around "arch" in sources.list entries
