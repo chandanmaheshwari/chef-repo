@@ -134,7 +134,7 @@ bash 'extract_module' do
     
 	tar xf "/tmp/#{src_filename_tomcat}" -C #{extract_path_tomcat}
     tar xf "/tmp/#{src_filename_java}" -C #{extract_path_java}
-	cp -r "/tmp/#{src_filename_plms}" -C #{extract_path_plms}
+	cp -r "/tmp/#{src_filename_plms}" #{extract_path_plms}
 	tar xf "/tmp/#{src_filename_settings}" -C #{extract_path_settings}
     tar xf "/tmp/#{src_filename_scripts}" -C #{extract_path_scripts} 
     EOH
