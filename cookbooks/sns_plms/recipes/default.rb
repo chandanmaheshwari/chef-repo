@@ -7,6 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
+# Create necessary directories
 
 directory "/d00/apps/plms" do
     mode 00775
@@ -46,7 +47,8 @@ directory "/d00/apps/plms" do
     action :create
   end
   
-  
+
+# Set variables  
 src_filename_java = "java.tar"
 src_filepath_java = "http://profcontent.ptc.com/java.tar"
 extract_path_java = "/d00/apps"
@@ -74,6 +76,7 @@ extract_path_scripts = "/d00/scripts"
 #    mode 00644
 #  end
 
+# Copy the different files from profcontent
   remote_file "/tmp/#{src_filename_java}" do
     source "#{src_filepath_java}"
     owner 'root'
@@ -124,6 +127,7 @@ extract_path_scripts = "/d00/scripts"
 #  mode 00644
 #end
 
+# Run script to actually untar the files.
 bash 'extract_module' do
   cwd "/d00"
   code <<-EOH
