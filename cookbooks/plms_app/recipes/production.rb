@@ -26,11 +26,12 @@
 #package_file = "fusion-webapp-3.2-SNAPSHOT.war"
  # remote_file "#{Chef::Config[:file_cache_path]}/#{package_file}" do
     #source node['mysql']['client']['url']
-#	source "https://ssp.ptc.com/builds/browse/PRECISION-FUSION1-27/artifact/JOB1/LMS-WAR/#{package_file}"
- #   not_if { File.exists? "#{Chef::Config[:file_cache_path]}/#{package_file}" }
- # end
-
-remote_file "/tmp/ls_plms.war" do
+ #	source "https://ssp.ptc.com/builds/browse/PRECISION-FUSION1-27/artifact/JOB1/LMS-WAR/#{package_file}"
+  #  not_if { File.exists? "#{Chef::Config[:file_cache_path]}/#{package_file}" }
+  #end
+  
+  #remote_file "/d00/apps/plms/tomcat1/ls_plms.war" do
+  remote_file "/tmp/ls_plms.war" do
     source "http://hq-fusdev02.ptcnet.ptc.com/builds/ls_plms.war"
   
   end
