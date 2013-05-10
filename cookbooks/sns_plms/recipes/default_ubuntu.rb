@@ -61,8 +61,8 @@
   src_filepath_plms = "http://profcontent.ptc.com/plms.war"
   extract_path_plms = "/home/ubuntu/war"
 
-  src_filename_settings = "settings.tar"
-  src_filepath_settings = "http://profcontent.ptc.com/settings.tar"
+  src_filename_settings = "settings_u.tar"
+  src_filepath_settings = "http://profcontent.ptc.com/settings_u.tar"
   extract_path_settings = "/home/ubuntu/properties"
 
   src_filename_scripts = "scripts_u.tar"
